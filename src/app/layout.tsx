@@ -21,10 +21,10 @@ const Disclaimer = dynamic(() => import("@/components/ui/overlay/Disclaimer"));
 /* ✅ Full SEO metadata */
 export const metadata: Metadata = {
   title: {
-    default: "KFlix – Watch Movies & TV Shows Online",
-    template: "%s | KFlix",
+    default: "kflix – Watch Movies & TV Shows Online",
+    template: "%s | kflix",
   },
-  applicationName: "KFlix",
+  applicationName: "kflix",
   description:
     "Your only choice for a free movies and TV shows streaming website. Watch HD dramas, series, and films online.",
   manifest: "/manifest.json",
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    siteName: "KFlix",
-    title: "KFlix – Watch Movies & TV Shows Online",
+    siteName: "kflix",
+    title: "kflix – Watch Movies & TV Shows Online",
     description:
       "Stream movies and TV shows for free on KFlix. HD quality with subtitles.",
     url: "https://kflix.co",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "KFlix – Watch Movies & TV Shows Online",
+    title: "kflix – Watch Movies & TV Shows Online",
     description:
       "Your only choice for a free movies and TV shows streaming website.",
     images: ["https://kflix.co/og-image.jpg"],
@@ -92,8 +92,8 @@ export default function RootLayout({
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          name: "KFlix",
-          alternateName: "KFlix.co",
+          name: "kflix",
+          alternateName: "kflix.co",
           url: "https://kflix.co/",
         })}
       </Script>
