@@ -21,7 +21,7 @@ export const getMoviePlayers = (id: string | number, startAt?: number): PlayersP
     },
     {
       title: "Server 2",
-      source: `https://player.videasy.net/movie/${id}`,
+      source: `https://vidsrc.cc/v2/embed/movie/${id}?autoPlay=false`,
       recommended: true,
       fast: true,
       ads: true,
@@ -29,7 +29,7 @@ export const getMoviePlayers = (id: string | number, startAt?: number): PlayersP
     },
     {
       title: "Server 3",
-      source: `https://vidsrc.cc/v2/embed/movie/${id}?autoPlay=false`,
+      source: `https://player.videasy.net/movie/${id}`,
       recommended: true,
       fast: true,
       ads: true,
@@ -98,7 +98,7 @@ export const getTvShowPlayers = (
     },
     {
       title: "Server 2",
-      source: `https://player.videasy.net/tv/${id}/${season}/${episode}`,
+      source: `https://vidsrc.cc/v2/embed/tv/${id}/${season}/${episode}?autoPlay=false`,
       recommended: true,
       fast: true,
       ads: true,
@@ -106,7 +106,7 @@ export const getTvShowPlayers = (
     },
     {
       title: "Server 3",
-      source: `https://vidsrc.cc/v2/embed/tv/${id}/${season}/${episode}?autoPlay=false`,
+      source: `https://player.videasy.net/tv/${id}/${season}/${episode}`,
       recommended: true,
       fast: true,
       ads: true,
