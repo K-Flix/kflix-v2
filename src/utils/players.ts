@@ -13,7 +13,7 @@ export const getMoviePlayers = (id: string | number, startAt?: number): PlayersP
   return [
     {
       title: "Server 1",
-      source: `https://vidsrc.cc/v2/embed/movie/${id}?autoPlay=false`,
+      source: `https://kisskh.wiki/embed/movie?tmdb=${id}`,
       recommended: true,
       fast: true,
       ads: true,
@@ -29,7 +29,7 @@ export const getMoviePlayers = (id: string | number, startAt?: number): PlayersP
     },
     {
       title: "Server 3",
-      source: `https://kisskh.wiki/embed/movie?tmdb=${id}`,
+      source: `https://vidsrc.cc/v2/embed/movie/${id}?autoPlay=false`,
       recommended: true,
       fast: true,
       ads: true,
@@ -38,8 +38,7 @@ export const getMoviePlayers = (id: string | number, startAt?: number): PlayersP
     {
       title: "Server 4",
       source: `https://vidfast.pro/movie/${id}?chromecast=false`,
-      fast: true,
-      ads: true,
+      recommended: true,
     },
     {
       title: "Server 5",
@@ -56,11 +55,10 @@ export const getMoviePlayers = (id: string | number, startAt?: number): PlayersP
       source: `https://www.vidking.net/embed/movie/${id}?autoPlay=true`,
       ads: true,
     },
-        {
+    {
       title: "Server 8",
       source: `https://player.vidplus.to/embed/movie/${id}?autoplay=true&poster=false&title=true&watchparty=false&chromecast=false&servericon=true&setting=true&pip=true&primarycolor=FF0000&secondarycolor=FFFFFF&iconcolor=FFFFFF&font=Roboto&fontcolor=FFFFFF&fontsize=20&opacity=0.5`,
-      fast: true,
-      ads: true,
+      recommended: true,
     },
     {
       title: "Server 9",
@@ -92,7 +90,7 @@ export const getTvShowPlayers = (
   return [
     {
       title: "Server 1",
-      source: `https://vidsrc.cc/v2/embed/tv/${id}/${season}/${episode}?autoPlay=false`,
+      source: `https://kisskh.wiki/embed/tv?tmdb=${id}&season=${season}&episode=${episode}`,
       recommended: true,
       fast: true,
       ads: true,
@@ -108,7 +106,7 @@ export const getTvShowPlayers = (
     },
     {
       title: "Server 3",
-      source: `https://kisskh.wiki/embed/tv?tmdb=${id}&season=${season}&episode=${episode}`,
+      source: `https://vidsrc.cc/v2/embed/tv/${id}/${season}/${episode}?autoPlay=false`,
       recommended: true,
       fast: true,
       ads: true,
