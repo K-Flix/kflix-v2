@@ -37,7 +37,7 @@ export const getMoviePlayers = (id: string | number, startAt?: number): PlayersP
     },
     {
       title: "Server 4",
-      source: `https://vidfast.pro/movie/${id}?chromecast=false`,
+      source: `https://player.vidplus.to/embed/movie/${id}?autoplay=true&poster=false&title=true&watchparty=false&chromecast=false&servericon=true&setting=true&pip=true&primarycolor=FF0000&secondarycolor=FFFFFF&iconcolor=FFFFFF&font=Roboto&fontcolor=FFFFFF&fontsize=20&opacity=0.5`,
       recommended: true,
     },
     {
@@ -57,7 +57,7 @@ export const getMoviePlayers = (id: string | number, startAt?: number): PlayersP
     },
     {
       title: "Server 8",
-      source: `https://player.vidplus.to/embed/movie/${id}?autoplay=true&poster=false&title=true&watchparty=false&chromecast=false&servericon=true&setting=true&pip=true&primarycolor=FF0000&secondarycolor=FFFFFF&iconcolor=FFFFFF&font=Roboto&fontcolor=FFFFFF&fontsize=20&opacity=0.5`,
+      source: `https://vidfast.pro/movie/${id}?chromecast=false`,
       recommended: true,
     },
     {
@@ -114,7 +114,7 @@ export const getTvShowPlayers = (
     },
     {
       title: "Server 4",
-      source: `https://moviesapi.club/tv/${id}-${season}-${episode}`,
+      source: `https://player.vidplus.to/embed/tv/${id}/${season}/${episode}?autoplay=true&poster=false&title=true&watchparty=false&chromecast=false&servericon=true&setting=true&pip=true&primarycolor=FF0000&secondarycolor=FFFFFF&iconcolor=FFFFFF&font=Roboto&fontcolor=FFFFFF&fontsize=20&opacity=0.5`,
       fast: true,
       ads: true,
     },
@@ -135,7 +135,7 @@ export const getTvShowPlayers = (
     },
     {
       title: "Server 8",
-      source: `https://player.vidplus.to/embed/tv/${id}/${season}/${episode}?autoplay=true&poster=false&title=true&watchparty=false&chromecast=false&servericon=true&setting=true&pip=true&primarycolor=FF0000&secondarycolor=FFFFFF&iconcolor=FFFFFF&font=Roboto&fontcolor=FFFFFF&fontsize=20&opacity=0.5`,
+      source: `https://moviesapi.club/tv/${id}-${season}-${episode}`,
       fast: true,
       ads: true,
     },
