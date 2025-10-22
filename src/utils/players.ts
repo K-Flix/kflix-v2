@@ -62,6 +62,13 @@ export const getMoviePlayers = (id: string | number, startAt?: number): PlayersP
     },
     {
       title: "Server 9",
+      source: `https://111movies.com/movie/${id}`,
+      fast: true,
+      ads: true,
+      resumable: true,
+    },
+    {
+      title: "Server 10",
       source: `https://vidlink.pro/movie/${id}?player=jw&title=false&primaryColor=006fee&secondaryColor=a2a2a2&iconColor=eefdec&autoplay=false&startAt=${startAt || ""}`,
       fast: true,
       ads: true,
@@ -139,8 +146,15 @@ export const getTvShowPlayers = (
       fast: true,
       ads: true,
     },
-    {
+     {
       title: "Server 9",
+      source: `https://111movies.com/tv/${id}/${season}/${episode}`,
+      fast: true,
+      ads: true,
+      resumable: true,
+    },
+    {
+      title: "Server 10",
       source: `https://vidlink.pro/tv/${id}/${season}/${episode}?player=jw&title=false&primaryColor=f5a524&secondaryColor=a2a2a2&iconColor=eefdec&autoplay=false&startAt=${startAt || ""}`,
       fast: true,
       ads: true,
